@@ -17,12 +17,16 @@
     "simple"
   ],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "dependency-check": "^2.5.0",
     "istanbul": "^0.3.19",
+    "noop2": "^2.0.0",
     "standard": "^5.1.1",
-    "tape": "^4.2.0"
+    "tape": "^4.2.0",
+    "vdom-to-html": "^2.1.1",
+    "virtual-dom": "^2.1.1"
   },
   "files": [
     "LICENSE",

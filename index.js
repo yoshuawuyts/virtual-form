@@ -18,13 +18,19 @@ function virtualForm (h, opts, arr) {
       val = { type: 'text', name: val }
     }
 
-    if (val.type === 'submit') {
-      return h('input', val)
+    assert.equal(typeof val, 'object')
+
+    if (opts.label) {
+      return h('fieldset', [
+        h('label', [ val.name ]),
+        h('input', val)
+      ])
     }
 
-    return h('fieldset', [
-      h('label', [ val.name ]),
-      h('input', val)
-    ])
+    if (val.type !== 'submit' && !val.placeholder) {
+      val.placeholder = val.name
+    }
+
+    return h('input', val)
   })
 }
