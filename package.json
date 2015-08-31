@@ -1,0 +1,32 @@
+{
+  "name": "virtual-form",
+  "version": "1.0.0",
+  "description": "Create a virtual-dom form",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/virtual-form",
+  "keywords": [
+    "virtual dom",
+    "vdom",
+    "form",
+    "create",
+    "simple"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "dependency-check": "^2.5.0",
+    "istanbul": "^0.3.19",
+    "standard": "^5.1.1",
+    "tape": "^4.2.0"
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "README.md"
+  ]
+}
