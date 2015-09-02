@@ -17,6 +17,7 @@ function virtualForm (h, opts, arr) {
     if (typeof val === 'string') {
       val = { type: 'text', name: val }
     }
+    if (!val.value) val.value = ''
 
     assert.equal(typeof val, 'object')
 

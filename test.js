@@ -21,8 +21,8 @@ test('should create an array of simple inputs', function (t) {
   ])))
   const comp = [
     '<form>',
-    '<input type="text" name="name" placeholder="name">',
-    '<input type="text" name="address" placeholder="address">',
+    '<input type="text" name="name" value="" placeholder="name">',
+    '<input type="text" name="address" value="" placeholder="address">',
     '</form>'
   ].join('')
   t.equal(form, comp)
@@ -37,8 +37,8 @@ test('should create an array of custom inputs', function (t) {
   ])))
   const comp = [
     '<form>',
-    '<input type="text" name="name" placeholder="name">',
-    '<input type="password" name="passphrase" placeholder="passphrase">',
+    '<input type="text" name="name" value="" placeholder="name">',
+    '<input type="password" name="passphrase" value="" placeholder="passphrase">',
     '<input type="submit" value="Submit">',
     '</form>'
   ].join('')
@@ -55,11 +55,11 @@ test('should create an array of labeled inputs', function (t) {
     '<form>',
     '<fieldset>',
     '<label>name</label>',
-    '<input type="text" name="name">',
+    '<input type="text" name="name" value="">',
     '</fieldset>',
     '<fieldset>',
     '<label>address</label>',
-    '<input type="text" name="address">',
+    '<input type="text" name="address" value="">',
     '</fieldset>',
     '</form>'
   ].join('')
