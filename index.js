@@ -21,6 +21,7 @@ function virtualForm (h, opts, arr) {
     assert.equal(typeof val, 'object')
 
     if (opts.label) {
+      if (val.type === 'submit') return h('input', val)
       return h('fieldset', [
         h('label', [ val.name ]),
         h('input', val)
